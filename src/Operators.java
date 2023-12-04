@@ -26,7 +26,7 @@ public class Operators {
         System.out.println(number1);
 
         //Operatori de atribuire
-        int numvber3= number2;
+        int number3 = number2;
         System.out.println(number2);
 
         number2=1;

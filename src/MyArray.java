@@ -7,9 +7,9 @@ public class MyArray {
         int length= myArray.length;
         System.out.println(length);
 
-//        System.out.println(myStringArray[0]);
-//        System.out.println(myStringArray[1]);
-//        System.out.println(myStringArray[2]);
+     //   System.out.println(myStringArray[0]);
+     //   System.out.println(myStringArray[1]);
+     //   System.out.println(myStringArray[2]);
 
         for (int i=0;i<myStringArray.length;i++)
             System.out.println(myStringArray[i]);

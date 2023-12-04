@@ -19,13 +19,15 @@ public class HomeworkDataType2 {
         System.out.println(lungime);
         System.out.println(myFavoriteMovie.length());
         //Exercice 5
-        char []myArray = {'a','b','c','d'};
-        System.out.println(myArray[0]);
-        System.out.println(myArray[1]);
-        System.out.println(myArray[3]);
-        for (int i=0;i<myArray.length;i++);
+        char []myCharArray = {'a','b','c','d'};
+        System.out.println(myCharArray[0]);
+        System.out.println(myCharArray[1]);
+        System.out.println(myCharArray[3]);
 
+        for (int i=0;i<myCharArray.length;i++) {
+            System.out.println(myCharArray[i]);
 
+        }
 
 
 
