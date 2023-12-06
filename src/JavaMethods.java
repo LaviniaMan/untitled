@@ -27,6 +27,11 @@ public class JavaMethods {
         String word1 = "Maraton";
         String word2 = "Nocturn";
         System.out.println(concatenateString(word1,word2));
+        System.out.println(metoda6("abcdefg"));
+        System.out.println(numarMaiMare(10,3,-5,103));
+        System.out.println(mijlocCuvant("Casa"));
+        System.out.println(metodaEx8Optional(6452));
+
 
 
 
@@ -100,7 +105,44 @@ public class JavaMethods {
     private static String concatenateString(String word1, String word2){
         return word1+" "+word2;}
 //Revers "abcd"
+    private static String metoda6(String cuvant){String cuvantInversat= "";
+            int lungime =cuvant.length();
+            for (int i = lungime-1; i>=0;i--){
+                cuvantInversat = cuvantInversat+cuvant.charAt(i);
+            }
+    return cuvantInversat;}
 
+//Scrieti o metoda care primeste 4 numere si il returneaza pe cel mai mare din ele. In cazul in care doua sau mai multe sunt eglale, returnati oricare din ele.
+    private static int numarMaiMare(int a, int b, int c, int d){
+        int max=a;
+         if (b>max){
+            max=b;}
+         if (c>max){
+             max=c;}
+         if (d>max){
+             max=d;}
+         return max;
+    }
+//Scrieti o metoda care primeste un cuvant si returneaza caracterul/caracterele din mijloc.
+    private static String mijlocCuvant (String cuvant){
+        String litereMijloc="";
+        int lungimeaCuvantului = cuvant.length();
+        if (lungimeaCuvantului%2==0){
+            int pozitieLitera1=lungimeaCuvantului/2-1;
+            int pozitieLitera2=lungimeaCuvantului/2;
+            litereMijloc= litereMijloc+cuvant.charAt(pozitieLitera1)+cuvant.charAt(pozitieLitera2);
+        }
+        else litereMijloc=litereMijloc+cuvant.charAt(lungimeaCuvantului/2);
+        return litereMijloc;
+    }
+//Scrieti o metoda care primeste un numar si returneaza suma cifrelor lui.
+    private static int metodaEx8Optional(int numar){
+        int sum=0;
+        while(numar!=0){
+        sum =sum+numar%10;
+        numar=numar/10;}
+        return sum;
+    }
 
 
 }
